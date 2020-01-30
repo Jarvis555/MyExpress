@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{name}
+  p #{address}
+  p #{city}, #{State} #{zip}
+  p  Today is #{date}
+  a(href='/users/list') Users
+  table
+    tr  
+      th Class Id
+      td |
+      th Course description
+    tr
+      td SD 105
+      td |
+      td javascript
+  a(href='/time/now') Time
